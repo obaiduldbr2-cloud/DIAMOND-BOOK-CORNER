@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIAMOND BOOK CORNER</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:"Noto Sans Bengali","SolaimanLipi",Arial,sans-serif;background:#f5f7f6;color:#17221e}
+header{background:linear-gradient(135deg,#075e54,#0b806f);color:#fff;padding:42px 18px;text-align:center}
+header h1{margin:0;font-size:clamp(28px,7vw,48px);letter-spacing:1px}
+header p{margin:10px 0 0;font-size:17px}
+.container{max-width:1050px;margin:auto;padding:22px 14px}
+.shop-card{background:#fff;border-radius:18px;padding:22px;box-shadow:0 8px 25px #00000012;margin-top:-25px;position:relative}
+.info{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.info a,.info span{display:inline-block;background:#eef7f4;padding:10px 14px;border-radius:10px;color:#075e54;text-decoration:none}
+h2{text-align:center;margin:30px 0 15px;color:#075e54}
+.search{width:100%;padding:14px 16px;border:1px solid #ccd8d4;border-radius:12px;font-size:16px;outline:none}
+.search:focus{border-color:#0b806f;box-shadow:0 0 0 3px #0b806f18}
+.table-wrap{overflow-x:auto;background:#fff;border-radius:16px;box-shadow:0 6px 20px #0000000d;margin-top:15px}
+table{width:100%;border-collapse:collapse;min-width:650px}
+th{background:#075e54;color:white;padding:13px 10px;text-align:center}
+td{padding:11px 10px;border-bottom:1px solid #e5ece9;text-align:center}
+td:nth-child(2){text-align:left;font-weight:600}
+tr:hover{background:#f1f8f6}
+.price{font-weight:700;color:#075e54;white-space:nowrap}
+.note{font-size:13px;color:#697570;margin-top:12px;text-align:center}
+footer{margin-top:35px;background:#123b35;color:#fff;text-align:center;padding:25px 15px}
+.call{display:inline-block;background:#fff;color:#075e54;padding:11px 18px;border-radius:10px;text-decoration:none;font-weight:700;margin-top:10px}
+.empty{display:none;text-align:center;padding:25px;color:#697570}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>DIAMOND BOOK CORNER</h1>
+  <p>বই, ফরম ও রেজিস্টারের নির্ভরযোগ্য সংগ্রহ</p>
+</header>
+
+<div class="container">
+  <section class="shop-card">
+    <div class="info">
+      <a href="tel:0171159755">📞 0171159755</a>
+      <span>📍 80/4/A Quazi Corner, Nawabpur Road, Dhaka</span>
+    </div>
+  </section>
+
+  <h2>📚 পণ্য তালিকা ও মূল্য</h2>
+  <input id="search" class="search" type="search" placeholder="বই/ফরমের নাম খুঁজুন...">
+
+  <div class="table-wrap">
+    <table id="products">
+      <thead>
+        <tr><th>ক্র. নং</th><th>বিবরণ</th><th>পাতা / সাইজ</th><th>দর</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>১</td><td>মূসক-৬.১</td><td>১০০ পাতা</td><td class="price">২৫০/-</td></tr>
+        <tr><td>১</td><td>মূসক-৬.১</td><td>২০০ পাতা</td><td class="price">৫০০/-</td></tr>
+        <tr><td>১</td><td>মূসক-৬.১</td><td>৩০০ পাতা</td><td class="price">৭৫০/-</td></tr>
+        <tr><td>১</td><td>মূসক-৬.১</td><td>৪০০ পাতা</td><td class="price">১,০০০/-</td></tr>
+        <tr><td>১</td><td>মূসক-৬.১</td><td>৫০০ পাতা</td><td class="price">১,২৫০/-</td></tr>
+        <tr><td>১</td><td>মূসক-৬.১</td><td>৬০০ পাতা</td><td class="price">১,৫০০/-</td></tr>
+
+        <tr><td>২</td><td>মূসক-৬.২</td><td>১০০ পাতা</td><td class="price">২৫০/-</td></tr>
+        <tr><td>২</td><td>মূসক-৬.২</td><td>২০০ পাতা</td><td class="price">৫০০/-</td></tr>
+        <tr><td>২</td><td>মূসক-৬.২</td><td>৩০০ পাতা</td><td class="price">৭৫০/-</td></tr>
+        <tr><td>২</td><td>মূসক-৬.২</td><td>৪০০ পাতা</td><td class="price">১,০০০/-</td></tr>
+        <tr><td>২</td><td>মূসক-৬.২</td><td>৫০০ পাতা</td><td class="price">১,২৫০/-</td></tr>
+        <tr><td>২</td><td>মূসক-৬.২</td><td>৬০০ পাতা</td><td class="price">১,৫০০/-</td></tr>
+
+        <tr><td>৩</td><td>মূসক-৬.২.১</td><td>১০০ পাতা</td><td class="price">৫০০/-</td></tr>
+        <tr><td>৩</td><td>মূসক-৬.২.১</td><td>২০০ পাতা</td><td class="price">১,০০০/-</td></tr>
+        <tr><td>৪</td><td>মূসক-৬.২.১ ক</td><td>১০০ পাতা</td><td class="price">২৫০/-</td></tr>
+        <tr><td>৫</td><td>মূসক-৬.৩ (বড়)</td><td>৫০×২ পাতা</td><td class="price">১৭০/-</td></tr>
+        <tr><td>৫</td><td>মূসক-৬.৩ (বড়)</td><td>৫০×৩ পাতা</td><td class="price">২০০/-</td></tr>
+        <tr><td>৬</td><td>মূসক-৬.৩ (ছোট)</td><td>৫০×২ পাতা</td><td class="price">৯০/-</td></tr>
+        <tr><td>৬</td><td>মূসক-৬.৩ (ছোট)</td><td>৫০×৩ পাতা</td><td class="price">১০০/-</td></tr>
+        <tr><td>৭</td><td>মূসক-৬.৪</td><td>৫০×৩ পাতা</td><td class="price">২০০/-</td></tr>
+        <tr><td>৮</td><td>মূসক-৬.৫</td><td>৫০×৩ পাতা</td><td class="price">১৭০/-</td></tr>
+        <tr><td>৯</td><td>মূসক-৬.৬</td><td>৫০×৩ পাতা</td><td class="price">২০০/-</td></tr>
+        <tr><td>১০</td><td>মূসক-৬.৭</td><td>৫০×৩ পাতা</td><td class="price">২০০/-</td></tr>
+        <tr><td>১১</td><td>মূসক-৬.৮</td><td>৫০×৩ পাতা</td><td class="price">২০০/-</td></tr>
+        <tr><td>১২</td><td>মূসক-৬.৯ (ছোট)</td><td>৫০×২ পাতা</td><td class="price">১০০/-</td></tr>
+        <tr><td>১৩</td><td>মূসক-৬.১০</td><td>৫০×২ পাতা</td><td class="price">১৭০/-</td></tr>
+        <tr><td>১৪</td><td>মূসক-৯.১</td><td>—</td><td class="price">১৫০/-</td></tr>
+        <tr><td>১৫</td><td>সাবফরম</td><td>—</td><td class="price">১৫০/-</td></tr>
+        <tr><td>১৬</td><td>মূসক-৬.২</td><td>—</td><td class="price">১৫০/-</td></tr>
+        <tr><td>১৭</td><td>মূসক-৪.৩</td><td>—</td><td class="price">৮০/-</td></tr>
+        <tr><td>১৮</td><td>মূসক-৪.৬</td><td>—</td><td class="price">৮০/-</td></tr>
+        <tr><td>১৯</td><td>বন্ড রেজিস্টার</td><td>১০০ পাতা</td><td class="price">২৫০/-</td></tr>
+        <tr><td>১৯</td><td>বন্ড রেজিস্টার</td><td>২০০ পাতা</td><td class="price">৫০০/-</td></tr>
+        <tr><td>২০</td><td>আমদানী-রপ্তানী খতিয়ান</td><td>—</td><td class="price">৫০০/-</td></tr>
+        <tr><td>২১</td><td>কুটির শিল্প বিক্রয় রশিদ</td><td>—</td><td class="price">১৫০/-</td></tr>
+        <tr><td>২২</td><td>হাজিরা খাতা</td><td>—</td><td class="price">১৫০/-</td></tr>
+        <tr><td>২৩</td><td>কর্মচারী হাজিরা রেজিস্টার</td><td>—</td><td class="price">১৫০/-</td></tr>
+        <tr><td>২৪</td><td>বয়স্ক হাজিরা রেজিস্টার</td><td>—</td><td class="price">১৫০/-</td></tr>
+        <tr><td>২৫</td><td>বেতন রেজিস্টার</td><td>—</td><td class="price">১৫০/-</td></tr>
+        <tr><td>২৬</td><td>ওভার টাইম রেজিস্টার</td><td>—</td><td class="price">১৫০/-</td></tr>
+        <tr><td>২৭</td><td>ছুটি রেজিস্টার</td><td>—</td><td class="price">১৫০/-</td></tr>
+        <tr><td>২৮</td><td>ব্যান্ডরোল রেজিস্টার (সিগারেট)</td><td>—</td><td class="price">২৫০/-</td></tr>
+        <tr><td>২৯</td><td>ব্যান্ডরোল (বিড়ি) / লাল-খাতা</td><td>—</td><td class="price">২৫০/-</td></tr>
+        <tr><td>৩০</td><td>ডাক বহি</td><td>—</td><td class="price">১০০/-</td></tr>
+        <tr><td>৩১</td><td>হাবেলী ভাড়ার রশিদ</td><td>—</td><td class="price">৭০/-</td></tr>
+        <tr><td>৩২</td><td>কার্বন পেপার (দ্বিমুখী)</td><td>প্রতি পিস</td><td class="price">৬/-</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="empty" class="empty">কোনো পণ্য পাওয়া যায়নি।</div>
+  <p class="note">দাম পরিবর্তন হতে পারে। সর্বশেষ মূল্য জানতে দোকানে যোগাযোগ করুন।</p>
+</div>
+
+<footer>
+  <strong>DIAMOND BOOK CORNER</strong><br>
+  80/4/A Quazi Corner, Nawabpur Road, Dhaka<br>
+  <a class="call" href="tel:0171159755">📞 এখনই কল করুন</a>
+</footer>
+
+<script>
+const search = document.getElementById('search');
+const rows = [...document.querySelectorAll('#products tbody tr')];
+const empty = document.getElementById('empty');
+search.addEventListener('input', () => {
+  const q = search.value.trim().toLowerCase();
+  let shown = 0;
+  rows.forEach(row => {
+    const match = row.innerText.toLowerCase().includes(q);
+    row.style.display = match ? '' : 'none';
+    if(match) shown++;
+  });
+  empty.style.display = shown ? 'none' : 'block';
+});
+</script>
+</body>
+</html>
